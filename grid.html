@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Grid</title>
+        <style type="text/css">
+            .one{grid-area: header;}
+            .two{grid-area:left;}
+            .three{grid-area: center;}
+            .four{grid-area:right;}
+            .five{grid-area: footer;}
+
+            .grid-container{
+                display: grid;
+                grid-template-areas: 'header header header header header header'
+                'left center center center right right'
+                'left footer footer footer footer footer';
+                gap: 50px;
+                padding:20px ; 
+
+            }
+            .grid-container > div {
+                    background-color: yellow;
+                    text-align: centre;
+                    font-size: 50px;
+                    padding: 40px 30px;
+
+
+                }
+        </style>
+    </head>
+    <body style="color:tomato;">
+        <h1>SUNFUN.COM</h1>
+        <P style="font-size: 30px; background-color:honeydew;"  >Sunil kumar mehta</P> 
+        <div class="grid-container"  >
+            <div class="one">Header </div>
+            <div class="two">left</div>
+            <div class="three">Center</div>
+            <div class="four">Right</div>
+            <div class="five">Footer</div>
+        </div>
+    </body>
+</html>
