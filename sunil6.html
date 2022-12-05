@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> LEARNING GRID</title> 
+		<style type="text/css">
+			.one{grid-area: header;}
+			.two{grid-area:left;}
+			.three{grid-area:center;}
+			.four{grid-area:right;}
+			.five{grid-area: footer;}
+
+    		.grid-container{
+				display: grid;
+				grid-template-areas: 'header header header header header header'
+				'left center center center right right'
+				'left footer footer footer footer footer';}
+		</style>
+	</head>
+	<body>
+		<h1> LEARNING  GRID </h1>
+		<P>SUNIL KUMAR MEHTA</P>
+		<div class="grid container">
+		<div class="one"> header</div>
+		<div class="two">left</div>
+		<div class="three">center</div>
+		<div class="four">right</div>
+		<div class="five">footer</div>
+</body>
+</html>
+
+
