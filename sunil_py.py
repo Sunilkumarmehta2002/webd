@@ -13,6 +13,95 @@ sol=a*a+b*b+2*a*b
 
 print(sol)
 
+from google.colab import drive
+drive.mount('/content/drive')
+
+#arm strong number 
+# input 153
+# 1=1
+# 5=125
+# 3=27
+
+n = 153
+s = n 
+b = len(str(n))
+sum = 0
+while n!= 0:
+   r = n%10
+   sum = sum+(r**b)
+   n = n//10
+if s == sum:
+   print("Armstrong")
+else:
+  print("Not Armstrong")
+
+a = "Sunil"
+def pr():
+  a = "kumar mehta"
+  global
+
+#45673
+a=input()
+c=len(a)
+d=a[0]
+e=a[c-1]
+calc=pow(int(d),int(e))
+print(calc)
+print(calc % 2 == 0)
+
+#list in ascending order 
+numlist=[]
+number=int(input("Enter the length of the list "))
+for i in range(1,number+1):
+  value=int(input("Please enter the numbers in the list %d" %i))
+  numlist.append(value)
+
+for i in range(number):
+  for j in range(i+1,number):
+    if (numlist[i]) > numlist[j]:
+       temp = numlist[i
+                      ]
+       numlist[i] = numlist[j] #sawpuping   
+       numlist[j] = temp   
+print(numlist)
+
+# wap to add "ing "or "ly 
+# input = xyz
+# output = xyzing
+# input = string"
+# output = stringly
+
+"""# New Section"""
+
+# using while loop
+i = int(input(" Please Enter any Positive Integer less than n : "))
+
+
+while(i <= 20):
+    j = 1
+    while(j <= 10):
+        print('{0}  *  {1}  =  {2}'.format(i, j, i*j))
+        j = j + 1
+    print('------------------')
+    i = i + 1
+
+#To print multiplication table using OOPs
+
+class MultiplyTable():
+    description="Generates Multiplication table"
+    def table(n):
+        for i in range(2,n+1): 
+          # For every number between 2 and n
+            print("\nMultiplication table for %d\n"%i)
+            for j in range(1,11):
+                print("%d x %d = %d"%(i,j,i*j))
+
+val=int(input("Enter the value for the table :"))
+
+print(" ------------------------ ")
+
+MultiplyTable.table(val)
+
 #recursion on factorial
 #when the function is calling itself again and again ==>Recursion (ittration )
 def factorial(n):
@@ -32,7 +121,134 @@ def sum(n):
 
 sum(5)
 
+#simple calculator 
+def add(x,y):
+  return x+y
+def sub(x,y):
+  return x-y
+def mul(x,y):
+  return x*y
+def div(x,y):
+  return x/y 
+print("select the operation that you want to perform ")
+print("1. addition")
+print("2. substract")
+print("3. multiplicartion")
+print("4. division")
+choice = input("choose 1/2/3/4")
 
+if choice in ('1','2','3','4'): 
+  n1 = float(input("Enter the first number")) 
+  n2 = float(input("Enter the second number"))
+
+  if choice =='1':
+    print(add(n1,n2))
+  elif choice =='2':
+    print(sub(n1,n2))
+  elif choice =='3':
+    print(mul(n1,n2))
+  elif choice =='4':
+    print(div(n1,n2))
+  else:
+    print("select correct option ")
+
+a=int(input("enter a number:")) 
+if a%2 == 0 :
+    print("Even")
+else:
+    print("Odd")
+
+a=int(input("enter a prime number:"))
+if a%1==0 and a%a==0: 
+  print("true")
+else:
+  print("false")
+
+#prime number 
+n=int(input())
+count=0
+i=1
+while i <= n-1:
+  if n%i==0 :
+    count=count+1
+  i=i+1
+if count>1 :
+    print("is not a prime")# Python Program to print table
+# of a number upto 10
+
+def table(n):
+	for i in range (1, 11):
+		
+		# multiples from 1 to 10
+		print "%d * %d = %d" % (n, i, n * i)
+
+# number for which table is evaluated
+n = 5
+table(n)
+
+# This article is contributed by Shubham Rana
+
+else:
+    print("is a prime")
+
+
+
+#armsrtrong number  
+# 1*1*1=1
+# 5*5*5=125
+# 3*3*3=27
+# by adding all 153
+
+# Python3 program to print table of a number
+# using recursion
+
+# print_table() prints table of number and takes
+# 1 required value that is number of whose teble to be printed
+# and an optional input i whose default value
+def  print_table(n, i=1):
+
+	if (i == 11): # base case
+		return
+	print(n, "*", i, "=", n * i)
+	i += 1 # increment i
+print_table(n, i)
+
+# Driver Code
+n = 5
+print_table(n)
+
+# This code is contributed by phasing17
+
+def table(n, r):
+    for i in range (1, r + 1):
+         
+        # multiples from 1 to r (range)
+        print "%d * %d = %d" % (n, i, n * i)
+ 
+# number for which table is evaluated
+n = 8
+ 
+# range upto which multiples are to be calculated
+r = 12
+table(n,r)
+
+rangenumber=int(input("Enter a Nth Number:"))
+c = 0
+letest = 0
+num = 1
+while c != rangenumber:
+    num2=0
+    num1 = num
+    while num1 != 0:
+        rem = num1 % 10
+        num1 //= 10
+        num2 = num2 * 10 + rem
+    if num==num2:
+        c+=1
+        letest = num
+
+    num = num + 1
+print(rangenumber,"th Palindrome Number is ",letest)
 
 def sunil(first_name,last_name):
   print(first_name + " "+last_name) 
@@ -235,6 +451,8 @@ elif 90 < a < 100 :
   print("A+")
 else :
   print("A should not be grater than 100")
+
+
 
 
 
