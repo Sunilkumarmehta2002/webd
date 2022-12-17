@@ -1,0 +1,14 @@
+input[type= text],input[type =passward]{
+    width: 10px;
+    font-size: 20px;
+    padding: 12px;
+    margin: auto;
+    background-color: #b0a68d;
+
+}
+*{
+    box-sizing: border-box;
+}
+label{
+    font-size: 20px;
+}

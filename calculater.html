@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<style type="text/css">
+		.button{
+			background-color: goldenrod;
+		}
+		
+
+
+
+	</style>
+</head>
+<body> 
+	<form name="calculator" style="background-color: rgba(1, 0, 0, .5); ">
+		Number 1(a): <input type="text" name='num1'>
+	</BR>
+		Number 2(b): <input type="text" name='num2'>
+	</BR>
+		Result     : <input type="text" name='total'>
+	</BR>
+		<!--bUTTON-->
+		<input type="button" value="Add" onclick="addition();">
+		<input type="button" value="SUBTRACTION" onclick="substraction();">
+		<input type="button" value="MULTIPLICATION" onclick="multiplication();">
+		<input type="button" value="DIVISION" onclick="division();">
+		<BR>
+		<input type="button" value="SQUARE (a)" onclick="square1();">
+		<input type="button" value="SQUARE (b)" onclick="square2();">
+		<input type="button" value="SQUARE Root (a)" onclick="squareroot1();">
+		<input type="button" value="SQUARE Root (b)" onclick="squareroot2();">
+		<BR>
+		<input type="button" value="MODULUS" onclick="modulus();">
+		<input type="button" value="POWER (a^b)" onclick="power1();">
+		<input type="button" value="POWER (b^a)" onclick="power2();">
+
+
+
+
+
+	</form>
+
+<script type="text/javascript">
+	function addition(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num2.value);
+		var sum = a + b;
+		document.calculator.total.value = sum;
+	}
+	function substraction(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num2.value);
+		var sum = a - b;
+		document.calculator.total.value = sum;
+	}
+	function multiplication(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num2.value);
+		var sum = a * b;
+		document.calculator.total.value = sum;
+	}
+	function division(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num2.value);
+		var sum = a / b;
+		document.calculator.total.value = sum;
+	}
+	
+	function square1(){
+		var a = Number(document.calculator.num1.value);
+		var a = Number(document.calculator.num1.value);
+		var sum = a * a;
+		document.calculator.total.value = sum;
+	}
+	function square2(){
+		var b = Number(document.calculator.num2.value);
+		var b = Number(document.calculator.num2.value);
+		var sum = b * b;
+		document.calculator.total.value = sum;
+	}
+	function power(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num2.value);
+		var sum = a ** b;
+		document.calculator.total.value = sum;
+	}
+	function squareroot1(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num1.value);
+		var sum = a ** (1/2);
+		document.calculator.total.value = sum;
+	}
+	function squareroot2(){
+		var b = Number(document.calculator.num2.value);
+		var b = Number(document.calculator.num2.value);
+		var sum = b ** (1/2);
+		document.calculator.total.value = sum;
+	}
+	function modulus(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num2.value);
+		var sum = a % b;
+		document.calculator.total.value = sum;
+	}
+    function power1(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num2.value);
+		var sum = a ** b;
+		document.calculator.total.value = sum;
+	}
+	 function power2(){
+		var b = Number(document.calculator.num2.value);
+		var a = Number(document.calculator.num1.value);
+		var sum = b ** a;
+		document.calculator.total.value = sum;
+	}
+
+</script>
+	
+</body>
+</html>
